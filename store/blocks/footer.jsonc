@@ -34,7 +34,7 @@
   },
   "rich-text#footer": {
       "props": {
-      "text": "Developers Day",
+      "text": "How to Develop",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
       }
