@@ -2,17 +2,17 @@
   /* 
    VTD LATAM 2020 
    Configurando Templates con Block Apps 1
-   Shelf
-   https://github.com/crisvtex/store-framework/issues/8
-   https://vtex.io/docs/app/vtex.shelf@1.41.1/
-   https://vtex.io/docs/components/product/vtex.product-summary@2.58.3/
+   Flex Layout
+   https://github.com/crisvtex/store-framework/issues/7
+   https://vtex.io/docs/components/layout/vtex.flex-layout
    */
   "store.home": {
     "blocks": [
       "rich-text",
       "info-card#pixel",
       "shelf#home",
-      "info-card#iphone"
+      "info-card#iphone",
+      "flex-layout.row"
     ]
   },
   "rich-text": {
@@ -66,6 +66,61 @@
       "textAlignment": "center",
       "callToActionMode": "link",
       "blockClass": "infoCardIphone"
+    }
+  },
+  "flex-layout.row":{
+    "children": [
+      "info-card#col-left",
+      "flex-layout.col#col-right"
+    ]
+  },
+  "info-card#col-left": {
+    "props": {
+      "id": "infoCardMacBook",
+      "imageUrl": "assets/imac.png",
+      "isFullModeStyle": true,
+      "headline": "iMac",
+      "subhead": "Todo-en-uno. Lista para todo.",
+      "callToActionText": "Más información ›",
+      "callToActionUrl": "/",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "callToActionMode": "link",
+      "blockClass": "infoCardMacBook"
+    }
+  },
+  "flex-layout.col#col-right": {
+    "children": [
+      "info-card#col-right-1",
+      "info-card#col-right-2"
+    ]
+  },
+  "info-card#col-right-1": {
+    "props": {
+      "id": "infoCardStadia",
+      "imageUrl": "assets/stadia.png",
+      "isFullModeStyle": false,
+      "headline": "Stadia Edición Premier",
+      "subhead": "El futuro de los videojuegos.",
+      "callToActionText": "Ver más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "callToActionMode": "button",
+      "blockClass": "infoCardStadia"
+    }
+  },
+  "info-card#col-right-2": {
+    "props": {
+      "id": "infoCardGoogleHome",
+      "imageUrl": "assets/google-home.png",
+      "isFullModeStyle": false,
+      "headline": "Google Home",
+      "subhead": "Ayuda para tu hogar.",
+      "callToActionText": "Ver más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "callToActionMode": "button",
+      "blockClass": "infoCardGoogleHome"
     }
   }
 }

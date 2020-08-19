@@ -20,3 +20,11 @@
 .infoCardCallActionText--infoCardIphone {
   text-decoration: none !important;
 }
+
+.infoCardContainer--infoCardMacBook {
+  background-color: #f2f2f2;
+  background-size: 60% !important;
+  background-position: bottom;
+  flex-direction: column;
+  justify-content: flex-start;
+}

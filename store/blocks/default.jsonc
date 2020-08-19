@@ -25,13 +25,21 @@
   "product-summary.shelf": {
     "children": [
       "product-summary-image",
-      "product-summary-add-to-list-button",
+      // "product-summary-add-to-list-button",
+      "product-specification-badges",
       "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
+      // "product-rating-inline",
+      // "product-summary-space",
       "product-summary-price",
-      "product-identifier.summary",
+      // "product-identifier.summary",
       "add-to-cart-button"
     ]
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "displayValue": "SPECIFICATION_NAME",
+      "visibleWhen": "True"
+    }
   }
 }
