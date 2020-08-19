@@ -1,16 +1,21 @@
 {
-  /* VTD LATAM 2020 */
+  /* 
+      VTD LATAM 2020 
+      Configurando Templates con Block Apps 1
+      Hello World
+      https://github.com/crisvtex/store-framework/issues/4
+  */
   "store.home": { 
-    "blocks": [
+      "blocks": [
       "rich-text"
-    ]
+      ]
   },
   "rich-text": { 
-    "props": { 
+      "props": { 
       "text": "VTEX Training Day LATAM 2020",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
-    }
+      }
   }
 }
