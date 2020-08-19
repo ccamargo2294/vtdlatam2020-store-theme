@@ -1,0 +1,22 @@
+.infoCardTextContainer--infoCardPixel {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.infoCardContainer--infoCardIphone {
+  padding-bottom: 20rem;
+  background-position-y: 5rem;
+}
+
+.infoCardSubhead--infoCardIphone {
+  margin-top: 1rem;
+}
+
+.infoCardCallActionContainer--infoCardIphone {
+  margin-top: 0;
+  text-decoration: none !important;
+}
+
+.infoCardCallActionText--infoCardIphone {
+  text-decoration: none !important;
+}
