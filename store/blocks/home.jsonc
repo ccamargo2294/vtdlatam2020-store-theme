@@ -2,17 +2,19 @@
   /* 
    VTD LATAM 2020 
    Configurando Templates con Block Apps 1
-   Flex Layout
-   https://github.com/crisvtex/store-framework/issues/7
-   https://vtex.io/docs/components/layout/vtex.flex-layout
+   Responsive Layout
+   https://github.com/crisvtex/store-framework/issues/10
+   https://vtex.io/docs/components/layout/vtex.responsive-layout@0.1.3/
    */
   "store.home": {
     "blocks": [
-      "rich-text",
+      // "rich-text",
       "info-card#pixel",
       "shelf#home",
-      "info-card#iphone",
-      "flex-layout.row"
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
+      // "info-card#iphone",
+      // "flex-layout.row"
     ]
   },
   "rich-text": {
@@ -121,6 +123,46 @@
       "textAlignment": "center",
       "callToActionMode": "button",
       "blockClass": "infoCardGoogleHome"
+    }
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop","image#desktop"]
+  },
+  "responsive-layout.mobile#mobile": {
+    "children": ["rich-text#mobile","image#mobile"]
+  },
+  "rich-text#desktop": {
+    "props": {
+      "text": "# Tu Café, A Tu Manera \n ### Nueva Colección de Cafeteras",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "### Tu Café, A Tu Manera \n #### Nueva Colección de Cafeteras",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%"
+    }
+  },
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%"
     }
   }
 }
