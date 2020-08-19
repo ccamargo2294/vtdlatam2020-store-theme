@@ -2,11 +2,18 @@
   /* 
    VTD LATAM 2020 
    Configurando Templates con Block Apps 1
-   Info Card
-   https://github.com/crisvtex/store-framework/issues/5
+   Shelf
+   https://github.com/crisvtex/store-framework/issues/8
+   https://vtex.io/docs/app/vtex.shelf@1.41.1/
+   https://vtex.io/docs/components/product/vtex.product-summary@2.58.3/
    */
   "store.home": {
-    "blocks": ["rich-text", "info-card#pixel","info-card#iphone"]
+    "blocks": [
+      "rich-text",
+      "info-card#pixel",
+      "shelf#home",
+      "info-card#iphone"
+    ]
   },
   "rich-text": {
     "props": {
@@ -17,7 +24,7 @@
       "color": "c-on-emphasis"
     }
   },
-  "info-card#pixel": {
+    "info-card#pixel": {
     "props": {
       "id": "infoCardPixel",
       "isFullModeStyle": true,
@@ -29,6 +36,21 @@
       "callToActionUrl": "/",
       "textAlignment": "left",
       "blockClass": "infoCardPixel"
+    }
+  },
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 3,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Más vendidos"
+      }
     }
   },
   "info-card#iphone": {
