@@ -12,10 +12,11 @@
   },
   "rich-text": { 
       "props": { 
-      "text": "VTEX Training Day LATAM 2020!",
+      "text": "VTEX Training Day LATAM 2020",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-1",
+      "color": "c-on-emphasis"
       }
   }
 }
