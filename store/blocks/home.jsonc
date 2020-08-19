@@ -1,6 +1,10 @@
 {
-  /* VTD LATAM 2020 */
+  /* 
+    VTD LATAM 2020 
+    Configurando Templates con Block Apps 1
+  */
+
   "store.home": { 
-    "blocks": []
+  "blocks": []
   }
 }
