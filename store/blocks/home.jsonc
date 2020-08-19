@@ -1,16 +1,6 @@
 {
   /* VTD LATAM 2020 */
   "store.home": { 
-    "blocks": [
-      "rich-text"
-    ]
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Training Day LATAM 2020",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
+    "blocks": []
   }
 }
