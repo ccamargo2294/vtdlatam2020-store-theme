@@ -34,7 +34,7 @@
   },
   "rich-text#footer": {
       "props": {
-      "text": "VTEX Training Day LATAM 2020",
+      "text": "Developers Day",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
       }
