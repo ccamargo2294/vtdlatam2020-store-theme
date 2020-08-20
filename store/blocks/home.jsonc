@@ -2,10 +2,10 @@
   /* 
    VTD LATAM 2020 
    Configurando Templates con Block Apps 1
-   Responsive Layout
-   https://github.com/crisvtex/store-framework/issues/10
-   https://vtex.io/docs/components/layout/vtex.responsive-layout@0.1.3/
-   */
+   Modal Layout
+   https://vtex.io/docs/components/all/vtex.modal-layout@0.6.1/   
+   https://vtex.io/docs/recipes/templates/creating-modals-using-icons
+  */
   "store.home": {
     "blocks": [
       // "rich-text",
