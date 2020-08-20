@@ -25,27 +25,27 @@
     "props": {
       "height": 600,
       "images": [{
-          "image": "assets/banners/banner-home-1.png",
+          "image": "assets/banners/home-1.png",
           "description": ""
         },
         {
-          "image": "assets/banners/banner-home-2.png",
+          "image": "https://dummyimage.com/1920x921/a8a8a8/ff0f9f.png&text=Slide+2",
           "description": ""
         },
         {
-          "image": "assets/banners/banner-home-3.png",
+          "image": "https://dummyimage.com/1920x921/a8a8a8/ff0f9f.png&text=Slide+3",
           "description": ""
         },
         {
-          "image": "assets/banners/banner-home-4.png",
+          "image": "https://dummyimage.com/1920x921/a8a8a8/ff0f9f.png&text=Slide+4",
           "description": ""
         },
         {
-          "image": "assets/banners/banner-home-5.png",
+          "image": "https://dummyimage.com/1920x921/a8a8a8/ff0f9f.png&text=Slide+5",
           "description": ""
         },
         {
-          "image": "assets/banners/banner-home-6.png",
+          "image": "https://dummyimage.com/1920x921/a8a8a8/ff0f9f.png&text=Slide+6",
           "description": ""
         }
       ]
