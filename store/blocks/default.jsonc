@@ -27,13 +27,25 @@
       "product-summary-image",
       // "product-summary-add-to-list-button",
       "product-specification-badges",
+      "product-summary-sku-selector",
       "product-summary-name",
       // "product-rating-inline",
-      // "product-summary-space",
+      "product-summary-space",
       "product-summary-price",
       // "product-identifier.summary",
       "add-to-cart-button"
     ]
+  },
+  "product-summary-image": {
+    "props": {
+      "mainImageLabel": "1",
+      "hoverImageLabel": "2"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "Agregar"
+    }
   },
   "product-specification-badges": {
     "props": {
