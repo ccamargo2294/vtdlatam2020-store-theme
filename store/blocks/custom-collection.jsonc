@@ -1,0 +1,18 @@
+{
+    "store.custom#collection": {
+      "blocks": ["search-result-layout.customQuery#collection"]
+    },
+    "search-result-layout.customQuery#collection": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "facetsBehavior": "Dynamic",
+          "maxItemsPerPage": 8,
+          "queryField": "137",
+          "mapField": "productClusterIds"
+        }
+      },
+      "blocks": ["search-result-layout.desktop"]
+    }
+  }

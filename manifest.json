@@ -1,7 +1,7 @@
 {
   "vendor": "vtdlatamio",
-  "name": "store-theme-test",
-  "version": "0.0.1",
+  "name": "store-theme-vtd",
+  "version": "0.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -25,6 +25,7 @@
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",
+    "vtex.product-price": "1.x",
     "vtex.search-result": "3.x",
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
@@ -47,7 +48,8 @@
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.modal-layout": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "vtex.pickup-availability": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
