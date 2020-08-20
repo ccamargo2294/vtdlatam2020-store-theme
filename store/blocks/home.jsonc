@@ -12,9 +12,10 @@
       "info-card#pixel",
       "shelf#home",
       "responsive-layout.desktop#desktop",
-      "responsive-layout.mobile#mobile"
-      // "info-card#iphone",
-      // "flex-layout.row"
+      "responsive-layout.mobile#mobile",
+      "info-card#iphone",
+      "flex-layout.row",
+      "modal-trigger#cupon"
     ]
   },
   "rich-text": {
@@ -163,6 +164,33 @@
       } ,
       "alt": "Coffee Makers Collection",
       "maxWidth": "100%"
+    }
+  },
+  "modal-trigger#cupon": {
+    "children": [
+      "rich-text#cupon",
+      "modal-layout#cupon"
+    ]
+  },
+  "rich-text#cupon": {
+    "props": {
+      "text": "Ver cupón",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "color": "c-on-emphasis"
+    }
+  },
+  "modal-layout#cupon": {
+    "children": [
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Cupón: VTDLATAM2020",
+      "font": "t-heading-4",
+      "color": "c-on-emphasis"
     }
   }
 }

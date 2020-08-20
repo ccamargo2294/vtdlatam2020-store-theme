@@ -1,3 +1,7 @@
+.container {
+  padding-top: 1rem;
+}
+
 .infoCardTextContainer--infoCardPixel {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -27,4 +31,10 @@
   background-position: bottom;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.infoCardContainer--infoCardStadia,
+.infoCardContainer--infoCardGoogleHome {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
