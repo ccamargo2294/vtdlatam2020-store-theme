@@ -1,7 +1,7 @@
 {
   "vendor": "vtdlatamio",
   "name": "store-theme-vtd",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
