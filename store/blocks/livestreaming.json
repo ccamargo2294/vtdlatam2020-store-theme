@@ -1,9 +1,11 @@
 {
   "store.custom#lives": {
     "blocks": [
-     "flex-layout.row#livestreaming",
-     "flex-layout.row#shelf"
+     "livestreaming-wrapper"
     ]
+  },
+  "livestreaming-wrapper": {
+    "children":[ "flex-layout.row#livestreaming"]
   },
   "rich-text": {
     "props": {
@@ -15,15 +17,20 @@
   },
   "flex-layout.row#livestreaming": {
     "children": [
-      "livestreaming-component",
-      "chat"
-    ]
+      "flex-layout.col#products",
+      "flex-layout.col#video",
+      "flex-layout.col#chat"
+    ],
+    "props": {
+      "blockClass": "container-live",
+      "preventHorizontalStretch": true
+    }
   },
   "flex-layout.row#shelf": {
     "children": ["list-context.livestreaming-products#demo1"]
   },
   "list-context.livestreaming-products#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#livestreaming"],
     "children": ["slider-layout#demo-products"]
   },
   "slider-layout#demo-products": {
@@ -36,6 +43,41 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
+    }
+  },
+  "flex-layout.col#products": {
+    "children": [
+      "list-context.livestreaming-products#demo1"
+    ],
+    "props": {
+      "blockClass": "product-list"
+    }
+  },
+  "flex-layout.col#video": {
+    "children": [
+      "livestreaming-component",
+      "flex-layout.row#likes"
+    ],
+    "props": {
+      "blockClass": "livestreaming"
+    }
+  },
+  "flex-layout.row#likes": {
+    "children": [
+      "like-btn",
+      "likes-counter"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "counter"
+    }
+  },
+  "flex-layout.col#chat": {
+    "children": [
+      "chat"
+    ],
+    "props": {
+      "blockClass": "chat"
     }
   }
 }

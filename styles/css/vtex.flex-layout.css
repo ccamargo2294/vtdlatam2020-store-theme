@@ -1,0 +1,31 @@
+.flexRowContent--container-live {
+    width: 100%;
+}
+
+.flexRow--container-live :global(.vtex-store-components-3-x-container) {
+    width: 100%;
+    max-width: initial;
+}
+
+.flexCol--livestreaming {
+    width: calc(100vw - 50rem);
+    padding: 10px;
+    background-color: #ffffff;
+    height: calc(100vh - 128px);
+    border-left: 1px solid #e4e4e4;
+}
+
+.flexCol--chat {
+    width: 25rem;
+    height: calc(100vh - 128px);
+}
+
+.flexCol--product-list {
+    width: 25rem;
+    height: calc(100vh - 128px);
+    background-color: #F7F9FA;
+}
+
+.flexRowContent--counter {
+    align-items: center;
+}

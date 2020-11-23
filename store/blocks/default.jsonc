@@ -66,5 +66,33 @@
       "displayValue": "SPECIFICATION_NAME",
       "visibleWhen": "True"
     }
+  },
+  "product-summary.shelf#livestreaming": {
+    "children": [
+      "flex-layout.row#content-product"
+    ],
+    "props": {
+      "blockClass": "summary-chat"
+    }
+  },
+  "flex-layout.row#content-product": {
+    "children": [
+      "flex-layout.col#image",
+      "flex-layout.col#info"
+    ]
+  },
+  "flex-layout.col#image": {
+    "children": [
+      "product-summary-image"
+    ]
+  },
+  "flex-layout.col#info": {
+    "children": [
+      "product-specification-badges",
+      "product-summary-space",
+      "product-summary-name",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
   }
 }
