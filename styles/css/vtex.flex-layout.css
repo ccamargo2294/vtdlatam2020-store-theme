@@ -29,3 +29,39 @@
 .flexRowContent--counter {
     align-items: center;
 }
+
+.flexCol--content-image  {
+    max-width: 10rem;
+}
+
+.flexCol--content-info {
+    padding-left: 10px;
+}
+
+@media all and (max-width: 760px) {
+    .flexCol--product-list {
+        width: 100%;
+        height: initial;
+    }
+
+    .flexRowContent--content-product {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .flexCol--livestreaming {
+        width: 100%;
+        padding: 10px 0;
+        height: initial;
+        border: none;
+    }
+
+    .flexCol--chat {
+        width: 100%;
+        height: initial
+    }
+
+    .flexRowContent--counter {
+        display: flex;
+    }
+}

@@ -79,12 +79,20 @@
     "children": [
       "flex-layout.col#image",
       "flex-layout.col#info"
-    ]
+    ],
+    "props": {
+      "blockClass": "content-product",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
   },
   "flex-layout.col#image": {
     "children": [
       "product-summary-image"
-    ]
+    ],
+    "props": {
+      "blockClass": "content-image"
+    }
   },
   "flex-layout.col#info": {
     "children": [
@@ -93,6 +101,9 @@
       "product-summary-name",
       "product-summary-price",
       "add-to-cart-button"
-    ]
+    ],
+    "props": {
+      "blockClass": "content-info"
+    }
   }
 }

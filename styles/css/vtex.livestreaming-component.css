@@ -28,4 +28,11 @@
   .chatArea .chatBubble {
     max-width: 250px;
   }
+  .chatArea {
+    height: 30vh;
+  }
 }
+/* 
+.videoContainer :global(.video-js) {
+  max-width: 100%;
+} */

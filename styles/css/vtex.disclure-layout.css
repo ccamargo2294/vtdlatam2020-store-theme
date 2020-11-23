@@ -1,0 +1,11 @@
+.trigger  {
+    width: 100%;
+    border: none;
+    background: #f71963;
+    border-radius: 6px;
+}
+
+.trigger :global(.vtex-rich-text-0-x-paragraph) {
+    color: white;
+    margin: 5px;
+}
