@@ -1,0 +1,41 @@
+{
+  "store.custom#lives": {
+    "blocks": [
+     "flex-layout.row#livestreaming",
+     "flex-layout.row#shelf"
+    ]
+  },
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "flex-layout.row#livestreaming": {
+    "children": [
+      "livestreaming-component",
+      "chat"
+    ]
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.livestreaming-products#demo1"]
+  },
+  "list-context.livestreaming-products#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"]
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

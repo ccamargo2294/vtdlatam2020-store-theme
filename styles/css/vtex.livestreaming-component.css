@@ -1,0 +1,26 @@
+.chatArea {
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  margin-top: 60px;
+}
+
+.chatArea .chatBubble {
+  background-color: #bbdefb;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.chatBubble .chatTime {
+  font-size: 12px;
+  color: #757575;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .chatArea .chatBubble {
+    max-width: 250px;
+  }
+}

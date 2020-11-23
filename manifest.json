@@ -1,7 +1,7 @@
 {
   "vendor": "vtdlatamio",
   "name": "store-theme-vtd",
-  "version": "0.0.5-beta.0",
+  "version": "0.0.6",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -12,6 +12,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.livestreaming-component": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
