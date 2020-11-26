@@ -3,21 +3,27 @@
     "blocks": [
       "responsive-layout.desktop",
       "responsive-layout.phone"
-    ]
+    ],
+    "props": {
+      "blockClass": "livestreaming"
+    }
   },
   "responsive-layout.desktop": {
     "children": ["livestreaming-wrapper"]
   },
   "responsive-layout.phone": {
-    "children": ["livestreaming-wrapper#phone"]
+    "children": ["livestreaming-wrapper#phone"],
+    "props": {
+      "blockClass": "livestreaming"
+    }
   },
   "livestreaming-wrapper#phone": {
     "children":[ "flex-layout.row#livestreaming-phone"]
   },
   "flex-layout.row#livestreaming-phone": {
     "children": [
-      "flex-layout.col#products-phone",
       "flex-layout.col#video",
+      "flex-layout.col#products-phone",
       "flex-layout.col#chat"
     ],  
     "props": {
@@ -27,11 +33,24 @@
   },
   "flex-layout.col#products-phone": {
     "children": [
-      "disclosure-layout#simple"
+      "drawer#products"
     ],
     "props": {
       "blockClass": "product-list"
     }
+  },
+  "drawer#products": {
+    "children": [
+      "list-context.livestreaming-products#demo1"
+    ],
+    "blocks": ["drawer-trigger#phone"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "productsDrawer"
+    }
+  },
+  "drawer-trigger#phone": {
+    "children": ["rich-text#products"]
   },
   "disclosure-layout#simple": {
     "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
@@ -41,7 +60,8 @@
   },
   "rich-text#products": {
     "props": {
-      "text": "Products"
+      "text": "Products",
+      "blockClass": "productsDrawer"
     }
   },
   "disclosure-content#simple": {

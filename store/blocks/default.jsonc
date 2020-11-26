@@ -96,8 +96,6 @@
   },
   "flex-layout.col#info": {
     "children": [
-      "product-specification-badges",
-      "product-summary-space",
       "product-summary-name",
       "product-summary-price",
       "add-to-cart-button"

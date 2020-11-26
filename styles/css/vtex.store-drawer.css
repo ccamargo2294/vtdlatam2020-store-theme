@@ -1,0 +1,16 @@
+.openIconContainer--productsDrawer {
+    padding: 0;
+    background-color: #f71963;
+    margin-bottom: 10px;
+}
+
+.overlay--productsDrawer  {
+    background-color: #e6e6e6;
+}
+
+
+@media all and (max-width: 760px) {
+    .childrenContainer--productsDrawer {
+        padding: 0 10px;
+    }
+}

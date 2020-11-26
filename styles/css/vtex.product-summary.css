@@ -2,3 +2,13 @@
     border-bottom: 1px solid #e4e4e4;
     max-width: 100vw !important;
 }
+
+@media all and (max-width: 760px) {
+    .containerNormal--summary-chat {
+        height: auto;
+    }
+
+    .nameContainer, .priceContainer {
+        padding: 5px 0;
+    }
+}

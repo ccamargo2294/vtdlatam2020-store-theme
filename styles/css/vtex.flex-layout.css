@@ -64,4 +64,12 @@
     .flexRowContent--counter {
         display: flex;
     }
+
+    .flexCol--livestreaming {
+        background-color: transparent;
+    }
+
+    .flexCol--content-image {
+        max-width: 8rem;
+    }
 }
