@@ -110,3 +110,11 @@
 .videoContainer :global(.video-js) {
   max-width: 100%;
 } */
+
+.liveInfoContainer {
+  padding: 0px 15px 0 15px;
+}
+
+.liveInfoEventName {
+  font-weight: bold;
+}

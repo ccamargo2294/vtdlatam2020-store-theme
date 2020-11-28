@@ -94,3 +94,7 @@
         max-width: 8rem;
     }
 }
+
+.flexRowContent--general {
+    padding-right: 15px;
+}
