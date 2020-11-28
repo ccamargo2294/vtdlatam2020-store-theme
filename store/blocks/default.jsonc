@@ -57,7 +57,7 @@
   },
   "add-to-cart-button": {
     "props": {
-      "text": "Lo quiero!"
+      "text": "Agregar"
     }
   },
   "product-specification-badges": {

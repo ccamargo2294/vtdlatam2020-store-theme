@@ -122,7 +122,8 @@
   "flex-layout.col#video": {
     "children": [
       "livestreaming-component",
-      "flex-layout.row#likes"
+      "flex-layout.row#likes",
+      "flex-layout.row#shelf-livetreaming"
     ],
     "props": {
       "blockClass": "livestreaming"
@@ -144,6 +145,30 @@
     ],
     "props": {
       "blockClass": "chat"
+    }
+  },
+  "flex-layout.row#shelf-livetreaming": {
+    "children": ["list-context.product-list#video-products"]
+  },
+  "list-context.product-list#video-products": {
+    "blocks": ["product-summary.shelf#livestreaming"],
+    "children": ["slider-layout#demo-products-video"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "slider-layout#demo-products-video": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf-video",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
     }
   }
 }

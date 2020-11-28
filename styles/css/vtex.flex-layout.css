@@ -9,21 +9,32 @@
 
 .flexCol--livestreaming {
     width: calc(100vw - 50rem);
-    padding: 10px;
     background-color: #ffffff;
     height: calc(100vh - 128px);
-    border-left: 1px solid #e4e4e4;
 }
 
 .flexCol--chat {
-    width: 25rem;
+    width: 23rem;
     height: calc(100vh - 128px);
+}
+
+.flexColChild--chat {
+    background-color: white;
+    box-shadow: -2px -4px 5px #55555536;
+    padding: 15px;
+    z-index: 1;
 }
 
 .flexCol--product-list {
     width: 25rem;
     height: calc(100vh - 128px);
-    background-color: #F7F9FA;
+}
+
+.flexColChild--product-list {
+    background: #fff;
+    box-shadow: 2px -4px 5px #55555536;
+    padding: 15px;
+    z-index: 1;
 }
 
 .flexRowContent--counter {
@@ -36,6 +47,16 @@
 
 .flexCol--content-info {
     padding-left: 10px;
+}
+
+.flexColChild--content-info :global(.vtex-button) {
+    background-color: #f71963;
+    border-color: #f71963;
+    outline: none;
+}
+
+.flexColChild--content-info :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    color: #fff;
 }
 
 @media all and (max-width: 760px) {
